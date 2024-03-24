@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
-    "copy-paste": "^1.5.3",
+    "clipboardy": "2.3.0",
     "openai": "^4.26.0"
   },
   "peerDependencies": {
