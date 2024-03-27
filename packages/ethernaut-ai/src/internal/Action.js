@@ -2,7 +2,7 @@ const debug = require('ethernaut-common/src/ui/debug')
 const chalk = require('chalk')
 const toCliSyntax = require('ethernaut-common/src/ui/syntax')
 const getTaskUsage = require('ethernaut-common/src/tasks/usage')
-const { copy } = require('copy-paste')
+const clipboardy = require('clipboardy')
 
 class Action {
   /**
@@ -105,7 +105,7 @@ class Action {
     let description = ''
 
     const syntax = toCliSyntax(this.task, this.args)
-    copy(syntax)
+    clipboardy.writeSync(syntax)
 
     description += chalk.bold(`${syntax}`)
     description += chalk.dim(' (copied to clipboard)\n')
