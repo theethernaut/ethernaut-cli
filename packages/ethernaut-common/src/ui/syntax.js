@@ -8,7 +8,9 @@ module.exports = function toCliSyntax(task, args, program = 'ethernaut') {
     'common',
   )
 
-  const tokens = [program]
+  const tokens = []
+  if (program.length > 0) tokens.push(program)
+
   if (task.scope) tokens.push(task.scope)
   tokens.push(task.name)
 
