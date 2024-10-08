@@ -27,6 +27,7 @@ require('ethernaut-challenges')
 require('ethernaut-ui')
 require('ethernaut-oso')
 require('ethernaut-ai-ui')
+require('ethernaut-optigov')
 
 async function main() {
   const txt = figlet.textSync('ethernaut-cli', { font: 'Graffiti' })

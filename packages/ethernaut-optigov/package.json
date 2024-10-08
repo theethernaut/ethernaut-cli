@@ -1,0 +1,31 @@
+{
+  "name": "ethernaut-optigov",
+  "version": "1.0.0",
+  "description": "Tasks for interacting the Optimism Agora retroactive public goods funding rounds (RetroPGF)",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run install:test",
+    "compile": "echo 'No compile step'",
+    "install:test": "cd test/fixture-projects/basic-project && npm install",
+    "test": "nyc --nycrc-path ../../.nycrc.json mocha --config ../../.mocharc.json"
+  },
+  "author": "Alejandro Santander",
+  "license": "ISC",
+  "peerDependencies": {
+    "hardhat": "^2.22.2"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.2",
+    "mocha": "^10.4.0",
+    "nyc": "^15.1.0",
+    "nyc-report-lcov-absolute": "^1.0.0"
+  },
+  "dependencies": {
+    "siwe": "^2.3.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "gitHead": "5ffea95c7b8186e6365da19d189a79f09a78d475"
+}
